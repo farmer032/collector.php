@@ -120,4 +120,4 @@ class HttpClient
 
 
 $client = new GithubClient($username, $token);
-$client->downloadAllRepos($username . DIRECTORY_SEPARATOR . date("Y-m-d_H-i-s"));
+$client->downloadAllRepos($username . '_' . date("Y-m-d_H-i-s"));
